@@ -4,7 +4,7 @@ Options -Indexes
   Options +FollowSymLinks
   RewriteEngine On
   RewriteCond %{HTTP_HOST} ^www\.
-  RewriteRule (.*) https://salliot.rules.su/$1 [L,R=301]
+  RewriteRule (.*) https://rules.su/$1 [L,R=301]
   RewriteCond %{SERVER_PORT} !^443$
   RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
 
@@ -12,5 +12,5 @@ Options -Indexes
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.html [L]
+  RewriteRule . /rules/index.html [L]
 </IfModule>
