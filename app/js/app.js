@@ -8,6 +8,34 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-	// Custom JS
+
+    let header = document.getElementById('header'),
+        scrollPrev = 0,
+        fixedButton = document.getElementById('bottom-elem');
+    window.addEventListener('scroll', function() {
+
+        let scrolled = window.pageYOffset;
+        if(scrolled > 62){
+            header.classList.add('h-fixed');
+            if ( scrolled > 62 && scrolled > scrollPrev ) {
+                header.classList.add('out');
+            } else {
+                header.classList.remove('out');
+            }
+            scrollPrev = scrolled;
+        }else if(scrolled == 0){
+            header.classList.remove('h-fixed');
+        }
+        if(scrolled < 62){
+          header.classList.remove('out');
+          header.classList.remove('h-fixed');
+        }
+
+        if(scrolled > 636){
+            fixedButton.classList.add('show');
+        }else{
+            fixedButton.classList.remove('show');
+        }
+    });
 
 })
