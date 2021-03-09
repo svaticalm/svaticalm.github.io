@@ -14,6 +14,7 @@ body
     height: 52px
     position: sticky
     top: 0
+    z-index: 10
     left: 0
     background-size: contain
     background-position: center
@@ -24,29 +25,30 @@ body
     &.out
         transform: translateY(-100%)
 .bg
-    margin-top: 20px
     width: 375px
     background-position: center
-    height: 495px
+    height: 616px
     background-repeat: no-repeat
     background-size: contain
     background-image: url(../images/bg.png)
 .order
-    width: 312px
-    height: 68px
+    width: 375px
+    height: 56px
     background-position: center
     background-size: contain
+    position: absolute
+    top: 564px
     background-repeat: no-repeat
     margin: 0 auto
-    margin-top: 26px
     background-image: url(../images/order.png)
 .bottom-elem
     background-image: url(../images/bottom-elem.png)
     width: 375px
-    height: 48px
+    height: 144px
     cursor: pointer
     background-size: contain
     position: fixed
+    z-index: 10
     bottom: 0
     background-repeat: no-repeat
     transform: translateY(100%)
@@ -55,8 +57,8 @@ body
         box-shadow: 0 0 10px rgba(0,0,0,0.2)
         transform: translateY(0)
 .page
-    width: 320px
-    height: 1800px
+    width: 343px
+    height: 1550px
     margin: 0 auto
-    margin-top: 56px
+    margin-top: 32px
     background-image: url(../images/page.png)

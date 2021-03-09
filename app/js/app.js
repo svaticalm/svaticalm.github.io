@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
           header.classList.remove('h-fixed');
         }
 
-        if(scrolled > 636){
+        if(scrolled > 620){
             fixedButton.classList.add('show');
         }else{
             fixedButton.classList.remove('show');
