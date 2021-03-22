@@ -1,6 +1,0 @@
-User-Agent: *
-Disallow: /id4137
-Disallow: /id4123
-Disallow: /id4136
-Disallow: /id7769
-Host: m.zemskidki.ru
